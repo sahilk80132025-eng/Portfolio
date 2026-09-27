@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VEXMA Case Study — Industrial Manufacturing</title>
+  <meta name="description" content="Dedicated Case Study for VEXMA Project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Case Study Specific Overrides */
+    .cs-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .cs-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .cs-tags {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--blue-primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+    .cs-title {
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 24px;
+      line-height: 1.2;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .cs-intro {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
+    .cs-section {
+      margin-bottom: 80px;
+    }
+    .cs-section-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 40px;
+      border-bottom: 2px solid var(--blue-light);
+      padding-bottom: 12px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    /* Research Cards */
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .research-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: var(--radius-md);
+      padding: 32px;
+    }
+    .research-card h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .research-card p {
+      color: var(--text-muted);
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .research-img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Workflow Diagram */
+    .workflow-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: var(--radius-md);
+      border: 1px solid #e2e8f0;
+    }
+    .workflow-step {
+      background: var(--blue-light);
+      color: var(--blue-primary);
+      padding: 16px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-align: center;
+      flex: 1;
+      min-width: 140px;
+      border: 1px solid var(--blue-border);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .workflow-arrow {
+      color: #94a3b8;
+      font-size: 24px;
+    }
+    
+    @media (max-width: 768px) {
+      .workflow-container {
+        flex-direction: column;
+      }
+      .workflow-arrow {
+        transform: rotate(90deg);
+      }
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+      .design-sys-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Colors and Typography */
+    .design-sys-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: var(--radius-md);
+      border: 1px solid #e2e8f0;
+    }
+    .color-swatches {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      width: 120px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+    }
+    .swatch-color {
+      height: 120px;
+    }
+    .swatch-info {
+      padding: 12px;
+      background: #ffffff;
+      font-size: 12px;
+      border-top: 1px solid #e2e8f0;
+    }
+    .swatch-info strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--text-dark);
+    }
+    .swatch-info span {
+      color: var(--text-muted);
+    }
+
+    .typography-sample {
+      margin-bottom: 32px;
+    }
+    .typography-sample h5 {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .typography-sample .font-name {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+    .typography-sample .font-chars {
+      font-size: 16px;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+      line-height: 1.5;
+      word-break: break-all;
+    }
+    .typography-sample .font-weights {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-dark);
+    }
+    
+    .font-montserrat { font-family: 'Montserrat', sans-serif; }
+    .font-outfit { font-family: 'Outfit', sans-serif; }
+
+    /* Final Mockups */
+    .mockup-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .mockup-img {
+      width: 100%;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <!-- TOP NAVIGATION BETWEEN SECTIONS -->
+  <nav class="top-nav" aria-label="Quick Navigation">
+    <a href="index.html#cover">Cover</a>
+    <a href="index.html#about-me">About Me</a>
+    <a href="index.html#introduction">Introduction</a>
+    <a href="index.html#projects">Projects</a>
+    <div class="nav-dropdown">
+      <a href="index.html#work" class="dropdown-toggle" style="cursor: default;">Work ▾</a>
+      <div class="dropdown-menu">
+        <a href="vexma.html">Vexma Technologies</a>
+        <a href="paradise.html">Paradise Technology</a>
+        <a href="amora.html">Amora Studio</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="cs-container">
+    
+    <div class="cs-header">
+      <div class="cs-tags">3 months | Digital Manufacturing | Web & Mobile Ecosystem</div>
+      <h1 class="cs-title">VEXMA &mdash; Industrial Manufacturing</h1>
+      <p class="cs-intro">A full-stack digital manufacturing hero experience designed for industrial engineers and buyers. The platform maps complex additive manufacturing services, highlights ISO/AS9100D compliance, and introduces instant drag-and-drop 3D quotation so quotation workflows are seamless and high-converting.</p>
+    </div>
+
+    <!-- Research Section -->
+    <section class="cs-section">
+      <h2 class="cs-section-title">Research</h2>
+      <div class="research-grid">
+        <div class="research-card">
+          <h4>Problem</h4>
+          <p>Vexma's company website had an old, simple hero section with no interactive way for clients to request quotes &mdash; creating friction in the sales/quotation process.</p>
+          <img src="assets/vexma/project/herosection update/Old.webp" alt="Old Website Design" class="research-img" />
+        </div>
+        <div class="research-card">
+          <h4>Solution</h4>
+          <p>Redesigned the hero section with an AI-powered "Get Instant Quote" feature &mdash; allowing clients to drag-and-drop files for instant 3D printing quotations.</p>
+          <img src="assets/vexma/project/herosection update/Pop up.webp" alt="Solution Design - Popup" class="research-img" />
+        </div>
+      </div>
+      <div class="research-grid" style="margin-top: 24px; grid-template-columns: 1fr;">
+        <div class="research-card">
+          <h4>My Role</h4>
+          <p>The existing UX already had SeedMake's AI-powered feature &mdash; letting clients upload files and get an instant quote &mdash; but it was buried deep in the site. My role was to bring this feature front and center into the hero section, redesigning the old hero into a new, high-converting layout.</p>
+          <p style="margin-top: 16px;">Since SeedMake's underlying code had limited customization access, I designed the feature as a popup/modal that wraps SeedMake's existing functionality &mdash; allowing the developer to integrate it smoothly within SeedMake's constraints, without needing to rebuild the feature from scratch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Workflow Section -->
+    <section class="cs-section">
+      <h2 class="cs-section-title">User Workflow</h2>
+      <div class="workflow-container">
+        <div class="workflow-step">Landing Page</div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step">Upload Files</div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step">AI Instant Quote</div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step">Quote Result</div>
+        <div class="workflow-arrow">&rarr;</div>
+        <div class="workflow-step">Contact / Convert</div>
+      </div>
+    </section>
+
+    <!-- Colours & Typography Section -->
+    <section class="cs-section">
+      <h2 class="cs-section-title">Colours & Typography</h2>
+      <div class="design-sys-grid">
+        
+        <div>
+          <h3 style="margin-bottom: 24px; font-size: 20px; font-weight: 700; font-family: 'Montserrat', sans-serif;">Colours</h3>
+          <div class="color-swatches">
+            <div class="swatch">
+              <div class="swatch-color" style="background: #2563EB;"></div>
+              <div class="swatch-info">
+                <strong>Hex: #2563EB</strong>
+                <span>RGB: 37, 99, 235</span>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #0F172A;"></div>
+              <div class="swatch-info">
+                <strong>Hex: #0F172A</strong>
+                <span>RGB: 15, 23, 42</span>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #475569;"></div>
+              <div class="swatch-info">
+                <strong>Hex: #475569</strong>
+                <span>RGB: 71, 85, 105</span>
+              </div>
+            </div>
+            <div class="swatch">
+              <div class="swatch-color" style="background: #F8FAFC; border-bottom: 1px solid #e2e8f0;"></div>
+              <div class="swatch-info">
+                <strong>Hex: #F8FAFC</strong>
+                <span>RGB: 248, 250, 252</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="margin-bottom: 24px; font-size: 20px; font-weight: 700; font-family: 'Montserrat', sans-serif;">Typography</h3>
+          <div class="typography-sample font-montserrat">
+            <h5>Titles, headlines, big texts</h5>
+            <div class="font-name">Montserrat</div>
+            <div class="font-chars">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br/>0123456789<br/>.,:;!?""'(){}[]---_...<br/>@#&*%+=/\|&lt;&gt;^~€$£¥</div>
+            <div class="font-weights">Bold &nbsp; Semibold &nbsp; Medium &nbsp; Regular</div>
+          </div>
+          
+          <div class="typography-sample font-outfit">
+            <h5>Body, subtitles and small captions</h5>
+            <div class="font-name">Outfit (Inter Alternative)</div>
+            <div class="font-chars">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br/>0123456789<br/>.,:;!?""'(){}[]---_...<br/>@#&*%+=/\|&lt;&gt;^~€$£¥</div>
+            <div class="font-weights">Bold &nbsp; Semibold &nbsp; Medium &nbsp; Regular</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Mockups -->
+    <section class="cs-section">
+      <h2 class="cs-section-title">Final Mockups</h2>
+      <div class="mockup-showcase">
+        <img src="assets/vexma/project/herosection update/mocuphero.png" alt="Laptop and Mobile Mockup Showcase" class="mockup-img" />
+        <img src="assets/vexma/project/herosection update/heronew.jpg" alt="Final Hero Section UI" class="mockup-img" />
+      </div>
+    </section>
+
+    <!-- Navigation Back -->
+    <div style="text-align: center; margin-top: 60px;">
+      <a href="vexma.html" style="display: inline-block; padding: 12px 32px; background: var(--blue-primary); color: #fff; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.2s ease;">&larr; Back to Vexma Projects</a>
+    </div>
+
+  </div>
+
+  <footer class="portfolio-footer">
+    <p>&copy; 2026 <strong>Sohil Khan</strong> &mdash; UI/UX Designer. Built with pixel-perfect precision.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

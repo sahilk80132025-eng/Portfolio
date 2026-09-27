@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vexma Technologies — Work</title>
+  <meta name="description" content="Work done for Vexma Technologies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- TOP NAVIGATION BETWEEN SECTIONS -->
+  <nav class="top-nav" aria-label="Quick Navigation">
+    <a href="index.html#cover">Cover</a>
+    <a href="index.html#about-me">About Me</a>
+    <a href="index.html#introduction">Introduction</a>
+    <a href="index.html#projects">Projects</a>
+    <div class="nav-dropdown">
+      <a href="#work" class="dropdown-toggle" style="cursor: default;">Work ▾</a>
+      <div class="dropdown-menu">
+        <a href="vexma.html">Vexma Technologies</a>
+        <a href="paradise.html">Paradise Technology</a>
+        <a href="amora.html">Amora Studio</a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="padding: 120px 24px 40px; text-align: center; max-width: 800px; margin: 0 auto;">
+    <h1 class="section-title">Vexma <span>Technologies</span></h1>
+    <p style="color: var(--text-muted); margin-top: 10px; font-size: 16px;">Leading website UX enhancements and digital marketing design, including social media campaigns, newsletters, reel editing, and brand template systems.</p>
+  </div>
+
+  <div class="tabs-container" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; padding: 0 24px;">
+    <button class="tab-btn active" data-tab="brochures">Brochures</button>
+    <button class="tab-btn" data-tab="newsletters">Newsletters</button>
+    <button class="tab-btn" data-tab="carousels">Carousels</button>
+    <button class="tab-btn" data-tab="social">Social Posts</button>
+    <button class="tab-btn" data-tab="displayads">Display Ads</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+  </div>
+
+  <section class="work-content-section" style="padding: 0 24px 80px;">
+    
+    <!-- BROCHURES TAB -->
+    <div id="tab-brochures" class="tab-content">
+      <div id="brochures-grid" class="asset-grid"></div>
+    </div>
+
+    <!-- NEWSLETTERS TAB -->
+    <div id="tab-newsletters" class="tab-content" style="display: none;">
+      <div class="newsletter-filters" style="text-align: center; margin-bottom: 24px;">
+        <button class="filter-btn active" data-filter="email" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer; margin: 0 4px; font-family: inherit; font-weight: 500;">Email Newsletters</button>
+        <button class="filter-btn" data-filter="linkedin" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer; margin: 0 4px; font-family: inherit; font-weight: 500;">LinkedIn Newsletters</button>
+      </div>
+      <div id="newsletters-grid" class="asset-grid"></div>
+    </div>
+
+    <!-- CAROUSELS TAB -->
+    <div id="tab-carousels" class="tab-content" style="display: none;">
+      <div id="carousels-grid" class="asset-grid"></div>
+    </div>
+
+    <!-- SOCIAL POSTS TAB (MASONRY) -->
+    <div id="tab-social" class="tab-content" style="display: none;">
+      <div id="social-grid" class="masonry-grid"></div>
+    </div>
+
+    <!-- DISPLAY ADS TAB -->
+    <div id="tab-displayads" class="tab-content" style="display: none;">
+      <div id="displayads-grid" class="asset-grid"></div>
+    </div>
+
+    <!-- PROJECTS TAB -->
+    <div id="tab-projects" class="tab-content" style="display: none;">
+      <!-- PROJECT 01: VEXMA INDUSTRIAL MANUFACTURING -->
+      <article class="project-card-scalable" id="hero-section-update">
+        <div class="ref-banner-card">
+          <div class="ref-banner-blue">
+            <div class="ref-pill-top">
+              <span class="ref-pill-connector"></span>
+              <span class="ref-pill-title">Project 1 : Industrial Manufacturing</span>
+            </div>
+            <div class="ref-banner-sub">3 months | Digital Manufacturing | Web & Mobile Ecosystem</div>
+            <h3 class="ref-banner-title">VEXMA</h3>
+            <p class="ref-banner-desc">
+              A full-stack digital manufacturing hero experience designed for industrial engineers and buyers. The platform maps complex additive manufacturing services, highlights ISO/AS9100D compliance, and introduces instant drag-and-drop 3D quotation so quotation workflows are seamless and high-converting.
+            </p>
+            <a href="vexma-case-study.html" style="display: inline-block; margin-top: 24px; padding: 12px 28px; background: #ffffff; color: #1E3A8A; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">View Case Study</a>
+            
+            
+          </div>
+          <div class="ref-banner-white">
+            <div class="ref-mockup-img-box" onclick="openLightbox('assets/images/ChatGPT Image Jul 26, 2026, 10_10_01 AM.png')">
+              <img src="assets/images/ChatGPT Image Jul 26, 2026, 10_10_01 AM.png" alt="VEXMA Digital Manufacturing Ecosystem Mockup" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 02: VEXMA CARES -->
+      <article class="project-card-scalable" id="vexma-healthcare" style="margin-top: 80px;">
+        <div class="ref-banner-card">
+          <div class="ref-banner-blue">
+            <div class="ref-pill-top">
+              <span class="ref-pill-connector"></span>
+              <span class="ref-pill-title">Project 2 : Healthcare & Medical</span>
+            </div>
+            <div class="ref-banner-sub">3D Printed Medical Products | Orthopedics & Prosthetics</div>
+            <h3 class="ref-banner-title">VEXMA CARES</h3>
+            <p class="ref-banner-desc">
+              A new healthcare vertical focusing on advanced 3D-printed medical products, including cranial helmets and titanium implants.
+            </p>
+            <a href="vexma-cares-case-study.html" style="display: inline-block; margin-top: 24px; padding: 12px 28px; background: #ffffff; color: #1E3A8A; text-decoration: none; border-radius: 50px; font-weight: 600; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)';">View Full Project</a>
+          </div>
+          <div class="ref-banner-white" style="display: flex; align-items: center; justify-content: center; background: #f8fafc;">
+            <div class="ref-mockup-img-box" onclick="openLightbox('assets/vexma/project/vexmacare/mocups/PC.png')">
+              <img src="assets/vexma/project/vexmacare/mocups/PC.png" alt="Vexma Cares Mockup" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'text-align: center; color: #94a3b8; font-weight: 500;\'><div style=\'font-size: 32px; margin-bottom: 8px;\'>📷</div>Assets pending...</div>';" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 03: DEF-TECH BHARAT EXHIBITION -->
+      <article class="project-card-scalable" id="project-3" style="margin-top: 80px;">
+        <div class="ref-banner-card">
+          <div class="ref-banner-blue">
+            <div class="ref-pill-top">
+              <span class="ref-pill-connector"></span>
+              <span class="ref-pill-title">Project 3 : Social Media Campaign</span>
+            </div>
+            <div class="ref-banner-sub">Trade Show | Defence & Aerospace</div>
+            <h3 class="ref-banner-title">DEF-TECH BHARAT</h3>
+            <p class="ref-banner-desc">
+              Social media marketing work for Vexma's participation in the Def-Tech Bharat exhibition. Showcasing precision manufacturing capabilities for the defence sector.
+            </p>
+            
+            
+          </div>
+          <div class="ref-banner-white" style="display: flex; align-items: center; justify-content: center; background: #f8fafc;">
+            <div class="ref-mockup-img-box" onclick="openLightbox('assets/vexma/project/deftech2026/Linkedln-Deftech.jpg')">
+              <img src="assets/vexma/project/deftech2026/Linkedln-Deftech.jpg" alt="Def-Tech Bharat Mockup" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'text-align: center; color: #94a3b8; font-weight: 500;\'><div style=\'font-size: 32px; margin-bottom: 8px;\'>📷</div>Assets pending...</div>';" />
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 04: VEXMA CLOUD – JOB CARD DASHBOARD -->
+      <article class="project-card-scalable" id="vexma-cloud-jobcard" style="margin-top: 80px;">
+        <div class="ref-banner-card">
+          <div class="ref-banner-blue">
+            <div class="ref-pill-top">
+              <span class="ref-pill-connector"></span>
+              <span class="ref-pill-title">Project 4 : UI/UX &middot; Internal Tool</span>
+            </div>
+            <div class="ref-banner-sub">UI/UX Design &middot; Vexma Cloud (internal manufacturing workflow software)</div>
+            <h3 class="ref-banner-title">VEXMA CLOUD</h3>
+            <p class="ref-banner-desc" style="font-size: 15px; font-weight: 700; color: #DBEAFE; margin-bottom: 8px;">Job Card Dashboard</p>
+            <p class="ref-banner-desc">
+              Vexma Cloud is a subdivision software of Vexma Technologies used to manage the manufacturing workflow. It includes a Machine Working Dashboard that tracks how much work each machine has completed via &ldquo;Job Cards&rdquo; (i.e., orders).
+            </p>
+            <p class="ref-banner-desc" style="margin-top: -12px; font-size: 14px; opacity: 0.9;">
+              <strong style="color: #BFDBFE;">Task:</strong> Redesign the Job Card UI component so that at a glance, a user can see &mdash; for a particular technology &mdash; how many machines are running, and how many job cards are pending or assigned to each.
+            </p>
+            <p class="ref-banner-desc" style="margin-top: -12px; font-size: 14px; opacity: 0.85;">
+              <strong style="color: #BFDBFE;">Outcome:</strong> The new card design lets users instantly understand, per technology, how many job cards exist and their distribution across machines &mdash; improving clarity and reducing time spent scanning the dashboard.
+            </p>
+          </div>
+          <div class="ref-banner-white" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f8fafc; padding: 40px 32px; gap: 16px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%;">
+              <div style="text-align: center;">
+                <div class="ref-mockup-img-box" onclick="openLightbox('assets/vexma/project/jobcarduicard/old.jpeg')">
+                  <img src="assets/vexma/project/jobcarduicard/old.jpeg" alt="Old Job Card Design" style="width:100%; height:auto; display:block;" />
+                </div>
+                <p style="margin-top: 10px; font-size: 12px; font-weight: 700; color: #94a3b8; letter-spacing: 0.8px; text-transform: uppercase;">Old Design</p>
+              </div>
+              <div style="text-align: center;">
+                <div class="ref-mockup-img-box" onclick="openLightbox('assets/vexma/project/jobcarduicard/new.jpeg')">
+                  <img src="assets/vexma/project/jobcarduicard/new.jpeg" alt="Updated Job Card Design" style="width:100%; height:auto; display:block;" />
+                </div>
+                <p style="margin-top: 10px; font-size: 12px; font-weight: 700; color: #2563eb; letter-spacing: 0.8px; text-transform: uppercase;">Updated Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+    </div>
+
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="portfolio-footer">
+    <p>&copy; 2026 <strong>Sohil Khan</strong> — UI/UX Designer. Built with pixel-perfect precision.</p>
+  </footer>
+
+  <!-- Lightbox Fullscreen Preview Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox(event)">
+    <button class="lightbox-close" aria-label="Close Preview">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Case Study Preview" />
+    </div>
+  </div>
+
+  <script src="assets/js/vexma_assets.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
